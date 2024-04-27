@@ -1,0 +1,91 @@
+/*设置全局按钮样式，css语言，勉强学习一下。先调所有的按钮，个别按钮再微调*/
+QPushButton{color: #fff;background-color: #34495e;padding: 10px 16px;
+    font-size: 17px;
+    line-height: 1.471;
+    border-radius: 6px;}
+/*按下按钮时按钮的样式，改个更深的颜色能判断出是按下了按钮即可*/
+QPushButton:pressed{color: #fff;background-color: #202c38;padding: 10px 16px;
+    font-size: 17px;
+    line-height: 1.471;
+    border-radius: 6px;}
+/*全局更改标签样式，这里字体大小最好先别设置太大，因为是全局标签的修改*/
+QLabel{height: 42px;
+    padding: 8px 12px;
+    font-size: 20px;
+    line-height: 1.467;
+    color: #34495e;
+    border-radius: 6px;}
+/*输入框的样式修改，增加边线以及圆角*/
+QLineEdit{border: 2px solid #bdc3c7;min-height: 25px;border-radius: 6px;}
+/*在QT里面可以对各个部件增加动态属性，我们对按钮增加了btn属性，
+设置主界面增删改查四个按钮的btn属性为main对他们进行样式修改*/
+QPushButton[btn="main"]{color: #fff;
+    background-color: #3498db;
+    border-radius: 6px;
+    padding: 4px 10px;}
+/*主界面按钮按压样式修改*/
+QPushButton[btn="main"]:pressed{color: #fff;
+    background-color: #2980B9;
+    border-radius: 6px;
+    padding: 4px 10px;}
+/*主界面的标题标签样式修改，字体变得更大*/
+QLabel[label="maintitle"]{height: 42px;
+    padding: 8px 12px;
+    font-size: 35px;
+    line-height: 1.467;
+    color: #34495e;
+    border-radius: 6px;}
+/*注销按钮修改*/
+QPushButton[btn="mainexit"]{color: #fff;
+    background-color: #e74c3c;
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+QPushButton[btn="mainexit"]:pressed{color: #fff;
+    background-color: #C0392B;
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+/*左部导航栏的样式修改*/
+QTreeWidget{background-color: rgba(52, 73, 94, 220);font-size: 16px;color: #fff;}
+/*表格窗口的样式修改以及表项*/
+QTableWidget{border: 1px solid gray;}
+QHeaderView::section{font-size: 14px;font-weight: bold;text-align: center; height: 30px; color:white;background-color: #34495e;border: 1px solid gray;
+}
+QPushButton[btn="simdata"]{color: #fff;
+    background-color: #F1C40F;
+    border-radius: 6px;
+    padding: 2px 10px;}
+/*主界面按钮按压样式修改*/
+QPushButton[btn="simdata"]:pressed{color: #fff;
+    background-color: #F39C12;
+    border-radius: 6px;
+    padding: 2px 10px;}
+/*选择框的的样式*/
+QCheckBox{font-size: 18px;color: #34495e;}
+/*添加修改学生按钮*/
+QPushButton[btn="dlg_btn"]{color: #fff;background-color: #34495e;padding: 6px 10px;
+    font-size: 17px;
+    line-height: 1.471;
+    border-radius: 6px;}
+/*按下按钮时按钮的样式，改个更深的颜色能判断出是按下了按钮即可*/
+QPushButton[btn="dlg_btn"]:pressed{color: #fff;background-color: #202c38;padding: 6px 10px;
+    font-size: 17px;
+    line-height: 1.471;
+    border-radius: 6px;}
+/*年龄框*/
+QSpinBox{border: 2px solid #bdc3c7;min-height: 25px;border-radius: 6px;}
+
+QComboBox{font-size: 14px;border-radius: 6px;border: 2px solid #bdc3c7;min-height: 25px;}
+QLabel[lb="stuinfo"]{height: 24px;
+    padding: 8px 12px;
+    font-size: 20px;
+    line-height: 1.467;
+    color: rgba(255, 255, 255, 0.795);
+    border-radius: 6px;}
+QLabel[lb="stupagename"]{height: 42px;
+    padding: 8px 12px;
+    font-size: 24px;
+    line-height: 1.467;
+    color: rgb(0, 255, 221);
+    border-radius: 6px;}
