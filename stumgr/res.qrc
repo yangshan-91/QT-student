@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/loginicon.jpg</file>
+        <file>resources/mwindowicon.jpg</file>
+        <file>resources/adminimage.jpg</file>
+        <file>resources/backgroundspiderverse.jpg</file>
+        <file>resources/stuqss.css</file>
+        <file>resources/name.txt</file>
+        <file>resources/japanesegirl.jpg</file>
+        <file>resources/stuimage.jpg</file>
+    </qresource>
+</RCC>
